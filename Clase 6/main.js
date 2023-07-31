@@ -103,32 +103,38 @@ estructura de un arreglo
 //   console.log(producto.nombre);
 // }
 
-class Producto {
-  constructor(nombre, precio) {
-    this.nombre = nombre;
-    this.precio = precio;
-    this.vendido = false;
-  }
+// class Producto {
+//   constructor(nombre, precio) {
+//     this.nombre = nombre;
+//     this.precio = precio;
+//     this.vendido = false;
+//   }
 
-  vender() {
-    this.vendido = true;
-  }
-}
+//   vender() {
+//     this.vendido = true;
+//   }
+// }
 
-const productos = [];
+// const productos = [];
 
-productos.push(new Producto("camisa", 1234));
-productos.push(new Producto("gorra", 134));
-productos.push(new Producto("pantalon", 1000));
-productos.push(new Producto("zaapto", 700));
+// productos.push(new Producto("camisa", 1234));
+// productos.push(new Producto("gorra", 134));
+// productos.push(new Producto("pantalon", 1000));
+// productos.push(new Producto("zaapto", 700));
 
-let nombre = prompt("producto a consultar la información");
-let producto;
+// let nombre = prompt("producto a consultar la información");
+// let producto;
 
-for (let index = 0; index < productos.length; index++) {
-  if (productos[index].nombre === nombre) {
-    producto = productos[index];
-  }
-}
+// for (let index = 0; index < productos.length; index++) {
+//   if (productos[index].nombre === nombre) {
+//     producto = productos[index];
+//   }
+// }
 
-alert(`El nombre es: ${producto.nombre} precio: ${producto.precio}`);
+// for (const item of productos) {
+//   if (item.nombre === nombre) {
+//     producto = item;
+//   }
+// }
+
+// alert(`El nombre es: ${producto.nombre} precio: ${producto.precio}`);
