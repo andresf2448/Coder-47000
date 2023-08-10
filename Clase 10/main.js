@@ -1,4 +1,4 @@
-let boton = document.getElementById("boton");
+// let boton = document.getElementById("boton");
 
 //primera forma para asignar un evento
 // boton.addEventListener("click", () => {
@@ -34,8 +34,8 @@ let boton = document.getElementById("boton");
 // boton.addEventListener("click", () => console.log("click"));
 
 //eventos del teclado
-let nombre = document.getElementById("nombre");
-let saludo = document.getElementById("saludo");
+// let nombre = document.getElementById("nombre");
+// let saludo = document.getElementById("saludo");
 
 // nombre.addEventListener("keydown", () => console.log("keydown"));
 // nombre.addEventListener("keyup", () => console.log("keyup"));
@@ -62,15 +62,35 @@ let saludo = document.getElementById("saludo");
 //   }
 // });
 
-let formulario = document.getElementById("formulario");
+// let formulario = document.getElementById("formulario");
 
-formulario.addEventListener("submit", (e) => {
-  e.preventDefault();
+// formulario.addEventListener("submit", (e) => {
+//   e.preventDefault();
 
-  let inputs = e.target.children;
+//   let inputs = e.target.children;
+//   console.log(inputs);
 
-  if (!inputs[0].value.includes("@")) {
-    inputs[0].value = "";
-    alert("Debe ser un correo")
-  }
-});
+//   if (!inputs[0].value.includes("@")) {
+//     inputs[0].value = "";
+//     alert("Debe ser un correo")
+//   }
+// });
+
+// let info = [];
+// let formulario = document.getElementById("formulario");
+
+// formulario.addEventListener("submit", (e) => {
+//   e.preventDefault();
+
+//   let inputs = e.target.children;
+
+//   let objeto = {
+//     nombre: inputs[0].value,
+//     gasto: inputs[1].value,
+//   };
+
+//   info.push(objeto);
+// });
+
+console.log([]);
+console.log([ ]);
