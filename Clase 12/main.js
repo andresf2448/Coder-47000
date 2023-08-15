@@ -161,3 +161,13 @@ const mascota = {
     },
   },
 };
+
+const {
+  nombre: nombreMascota,
+  propietario: {
+    casa: { propietario1: asd },
+    oficina: { propietario1 },
+  },
+} = mascota;
+
+console.log(propietario1, nombreMascota);
