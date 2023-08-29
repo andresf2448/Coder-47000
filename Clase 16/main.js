@@ -63,18 +63,22 @@
 let listado = document.getElementById("listado");
 
 const pedirProductos = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const data = await response.json();
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const data = await response.json();
 
-  data.forEach((publicacion) => {
-    const li = document.createElement("li");
-    li.innerHTML = `
+    data.forEach((publicacion) => {
+      const li = document.createElement("li");
+      li.innerHTML = `
       <h2>${publicacion.title}</h2>
       <p>${publicacion.body}</p>
     `;
 
-    listado.append(li);
-  });
+      listado.append(li);
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 pedirProductos();
